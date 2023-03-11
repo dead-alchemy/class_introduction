@@ -11,7 +11,7 @@ export default ({mode}) => {
 		envDir: "../",
 		plugins: [react(), tsconfigPaths()],
 		server: {
-			port: +env.VITE_PORT,
+			port: +env.VITE_PORT || 3000,
 		},
 		define: {
 			BASE_API: JSON.stringify(env.VITE_API_URL),

@@ -1,52 +1,41 @@
-import {useState} from "react";
-import {
-	Box,
-	Center,
-	Link,
-	Image,
-	Button,
-	Text,
-	Heading,
-} from "@chakra-ui/react";
+import picture from "../../assets/pictures/IMG_1633.jpg";
 
-import reactLogo from "assets/react.svg";
+import {Box, Image, Heading} from "@chakra-ui/react";
 
 const App = () => {
-	const [count, setCount] = useState(0);
-
 	return (
-		<Box maxWidth={"1280px"} my={0} mx={"auto"} textAlign="center">
-			<Center>
-				<Link href="https://vitejs.dev" target="_blank">
-					<Image
-						src="/vite.svg"
-						height={"6em"}
-						p={"1.5em"}
-						alt="Vite logo"
-					/>
-				</Link>
-				<Link href="https://reactjs.org" target="_blank">
-					<Image
-						src={reactLogo}
-						height={"6em"}
-						p={"1.5em"}
-						filter={"drop-shadow(0 0 2em blue.800);"}
-						alt="React logo"
-					/>
-				</Link>
-			</Center>
-			<Heading as={"h1"}>Vite + React</Heading>
-			<Box p={2}>
-				<Button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</Button>
-				<Text>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</Text>
+		<Box
+			display={"grid"}
+			justifyContent="center"
+			textAlign={"center"}
+			gridGap={8}
+		>
+			<Heading
+				border="solid"
+				borderRadius=".5rem"
+				background="blue.200"
+				mx="4rem"
+				py="1rem"
+			>
+				Hello CSC350
+			</Heading>
+
+			<Heading fontSize="3xl">About Me!</Heading>
+			<Box display={"flex"} gridGap={4}>
+				<Image
+					borderRadius="40px"
+					width={"80%"}
+					src={picture}
+					boxShadow="0 1px 8px rgba(0, 0, 0, 0.25)"
+				/>
+				<Box pl="4" fontSize={"lg"}>
+					<Box my="4">David Nicholas</Box>
+					<Box my="4">Salt Lake City, Utah</Box>
+					<Box my="4">Software Developer</Box>
+					<Box my="4">Married</Box>
+					<Box my="4">3 dogs and 2 cats</Box>
+				</Box>
 			</Box>
-			<Text color={"gray.500"}>
-				Click on the Vite and React logos to learn more
-			</Text>
 		</Box>
 	);
 };
