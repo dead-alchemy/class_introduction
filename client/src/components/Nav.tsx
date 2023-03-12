@@ -17,15 +17,7 @@ const Nav = () => {
 		setNav(i);
 	};
 	return (
-		<Box
-			as="nav"
-			display={"flex"}
-			width="100vw"
-			px={2}
-			py={1}
-			gridGap={4}
-			justifyContent="center"
-		>
+		<Box as="nav" display={"flex"} gridGap={4} justifyContent="center">
 			{tabs.map((tab, index) => (
 				<Box
 					key={tab.href}

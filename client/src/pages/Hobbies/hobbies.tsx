@@ -1,5 +1,5 @@
 import accordion from "../../assets/pictures/accordion.jpg";
-import denver from "../../assets/pictures/IMG_3186.jpg";
+import denver from "../../assets/pictures/IMG_2717.jpg";
 import Aquarium from "../../assets/pictures/Aquarium.jpg";
 import camping from "../../assets/pictures/camping.jpg";
 import camping2 from "../../assets/pictures/IMG_1101.jpeg";

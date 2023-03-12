@@ -1,4 +1,5 @@
 import picture from "../../assets/pictures/IMG_1633.jpg";
+import wedding from "../../assets/pictures/IMG_3186.jpg";
 
 import {Box, Image, Heading} from "@chakra-ui/react";
 
@@ -22,12 +23,23 @@ const App = () => {
 
 			<Heading fontSize="3xl">About Me!</Heading>
 			<Box display={"flex"} gridGap={4}>
-				<Image
-					borderRadius="40px"
-					width={"80%"}
-					src={picture}
-					boxShadow="0 1px 8px rgba(0, 0, 0, 0.25)"
-				/>
+				<Box>
+					<Image
+						borderRadius="40px"
+						boxSize="25rem"
+						objectFit="cover"
+						src={picture}
+						boxShadow="0 1px 8px rgba(0, 0, 0, 0.25)"
+						mb={4}
+					/>
+					<Image
+						borderRadius="40px"
+						boxSize="25rem"
+						objectFit="cover"
+						src={wedding}
+						boxShadow="0 1px 8px rgba(0, 0, 0, 0.25)"
+					/>
+				</Box>
 				<Box pl="4" fontSize={"lg"}>
 					<Box my="4">David Nicholas</Box>
 					<Box my="4">Salt Lake City, Utah</Box>

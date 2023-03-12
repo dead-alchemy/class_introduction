@@ -3,13 +3,7 @@ import Nav from "./Nav";
 
 const Display = (props: any) => {
 	return (
-		<Box
-			minHeight={"100vh"}
-			minWidth={"100vw"}
-			backgroundColor="black.200"
-			my={0}
-			mx={"auto"}
-		>
+		<Box minHeight={"100vh"} backgroundColor="black.200">
 			<Nav />
 			{props.children}
 		</Box>
