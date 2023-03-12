@@ -1,9 +1,10 @@
-import {useState} from "react";
-
+import {useLocation} from "react-router-dom";
 import {Box} from "@chakra-ui/react";
 import {NavLink} from "react-router-dom";
 
 const Nav = () => {
+	const {pathname} = useLocation();
+
 	const tabs = [
 		{href: "/", display: "About Me"},
 		{href: "/course", display: "Course"},
@@ -11,31 +12,19 @@ const Nav = () => {
 		{href: "/where", display: "Where To Find Me"},
 	];
 
-	const [nav, setNav] = useState(0);
-
-	const onNavHandler = (i: number) => {
-		setNav(i);
-	};
 	return (
 		<Box as="nav" display={"flex"} gridGap={4} justifyContent="center">
 			{tabs.map((tab, index) => (
 				<Box
 					key={tab.href}
-					color={nav === index ? "red.300" : "blue.500"}
+					color={pathname === tab.href ? "red.300" : "blue.500"}
 					fontWeight="700"
 					fontSize={"xl"}
 					_hover={{
 						textDecoration: "underline",
 					}}
 				>
-					<NavLink
-						to={`${tab.href}`}
-						onClick={() => {
-							onNavHandler(index);
-						}}
-					>
-						{tab.display}
-					</NavLink>
+					<NavLink to={`${tab.href}`}>{tab.display}</NavLink>
 				</Box>
 			))}
 		</Box>
