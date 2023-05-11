@@ -8,8 +8,10 @@ const Where = () => {
 			textAlign={"center"}
 			gridGap={8}
 		>
-			<Heading fontSize="3xl">Where to Find Me!</Heading>
-			<UnorderedList fontSize={"xl"} styleType="none">
+			<Heading fontSize="3xl" color="gray.800">
+				Where to Find Me!
+			</Heading>
+			<UnorderedList fontSize={"xl"} styleType="none" color={"blue.600"}>
 				<ListItem>
 					<Link href="https://dnicholas.me/" isExternal>
 						dnicholas.me

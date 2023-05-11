@@ -14,9 +14,10 @@ const Hobbies = () => {
 			justifyContent="center"
 			textAlign={"center"}
 			gridGap={8}
+			color="gray.800"
 		>
 			<Heading fontSize="3xl">What Hobbies Do I Have?</Heading>
-			<Box>
+			<Box color="gray.800">
 				<Heading fontSize="xl">Travelling</Heading>
 				<Box display="flex" gridGap={8} justifyContent="center">
 					<Image

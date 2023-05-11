@@ -10,6 +10,7 @@ const App = () => {
 			justifyContent="center"
 			textAlign={"center"}
 			gridGap={8}
+			color="gray.700"
 		>
 			<Heading
 				border="solid"
@@ -17,8 +18,9 @@ const App = () => {
 				background="blue.200"
 				mx="4rem"
 				py="1rem"
+				color={"gray.100"}
 			>
-				Hello CSC350
+				Hello CSC370
 			</Heading>
 
 			<Heading fontSize="3xl">About Me!</Heading>
